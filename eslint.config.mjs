@@ -9,8 +9,12 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
+/** @type { import("eslint").Linter.Config[] } */
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
-];
+  ...compat.extends("next/core-web-vitals", "next/typescript", "prettier"),
+  {
+    ignores: ["node_modules", "dist", "build", ".next", "public"],
+  },
+] 
 
 export default eslintConfig;
