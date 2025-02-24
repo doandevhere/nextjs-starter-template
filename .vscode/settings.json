@@ -1,3 +1,9 @@
 {
-  "i18n-ally.localesPaths": ["i18n/messages"]
+  "i18n-ally.localesPaths": ["i18n/messages"],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always",
+    "source.organizeImports": "always"
+  }
 }
