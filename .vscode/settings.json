@@ -5,5 +5,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "always",
     "source.organizeImports": "always"
-  }
+  },
+  "i18n-ally.keystyle": "nested"
 }
